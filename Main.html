@@ -12,82 +12,81 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="Main.html">Latitude</a>
+  <section class="ground" id="about">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="Main.html">Latitude</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li><a href="Humidity.html">Humidity</a></li>
+              <li><a href="Max_Temperature.html">Max Temp</a></li>
+              <li><a href="Wind_Speed.html">Wind</a></li>
+            </ul>
+          </li>
+          <li><a href="Comparison.html">Comparisons</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="Cloudiness.html">Cloudiness</a></li>
-            <li><a href="Humidity.html">Humidity</a></li>
-            <li><a href="Max_Temperature.html">Max Temp</a></li>
-            <li><a href="Wind_Speed.html">Wind</a></li>
-          </ul>
-        </li>
-        <li><a href="Comparison.html">Comparisons</a></li>
-        <li><a href="data.html">Data</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h3 class="header">Summary: Latitude vs X</h3>
-            <hr>
-            <div class="media">
-              <div class="media-left">
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3 class="header">Summary: Latitude vs X</h3>
+              <hr>
+              <div class="media">
+                <div class="media-left">
+                  <a href="Max_Temperature.html">
+                    <img class="media-object main" src="Resources\assets\images\Fig1.png" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                  accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on
+                  over 500 cities.
+                </div>
+                <div> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
+                  lattitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This
+                  site
+                  provides the source data and visualizations created as part of the analysis, as well as explanations
+                  and descriptions of any trends and correlations witnessed.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h4 class="header">Visualizations</h4>
+              <hr>
+              <div>
                 <a href="Max_Temperature.html">
-                  <img class="media-object main" src="Resources\assets\images\Fig1.png" alt="...">
+                  <img class="small" src="Resources\assets\images\Fig1.png" alt="...">
+                </a>
+                <a href="Humidity.html">
+                  <img class="small" src="Resources\assets\images\Fig2.png" alt="...">
                 </a>
               </div>
-              <div class="media-body">
-                The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-                accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on
-                over 500 cities.
+              <div>
+                <a href="Cloudiness.html">
+                  <img class="small" src="Resources\assets\images\Fig3.png" alt="...">
+                </a>
+                <a href="Wind_Speed.html">
+                  <img class="small" src="Resources\assets\images\Fig4.png" alt="...">
+                </a>
               </div>
-              <div> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
-                lattitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site
-                provides the source data and visualizations created as part of the analysis, as well as explanations
-                and descriptions of any trends and correlations witnessed.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h4 class="header">Visualizations</h4>
-            <hr>
-            <div>
-              <a href="#">
-                <img class="small" src="Resources\assets\images\Fig1.png" alt="...">
-              </a>
-              <a href="#">
-                <img class="small" src="Resources\assets\images\Fig2.png" alt="...">
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img class="small" src="Resources\assets\images\Fig3.png" alt="...">
-              </a>
-              <a href="#">
-                <img class="small" src="Resources\assets\images\Fig4.png" alt="...">
-              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
+  </section>
 </body>
 
 </html>

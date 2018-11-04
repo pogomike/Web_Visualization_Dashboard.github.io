@@ -15,6 +15,6 @@ h4.header{
     color: darkcyan;
 }
 
-body{
-    background:#efeee7
+section.ground {
+    background-color: rgb(179, 226, 226);
 }

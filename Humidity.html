@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Humidity</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+  <section class="ground" id="about">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="Main.html">Latitude</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="main.html">Latitude</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="Cloudiness.html">Cloudiness</a></li>
-          <li><a href="Humidity.html">Humidity</a></li>
-          <li><a href="Max_Temperature.html">Max Temp</a></li>
-          <li><a href="Wind_Speed.html">Wind</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li><a href="Max_Temperature.html">Max Temp</a></li>
+              <li><a href="Wind_Speed.html">Wind</a></li>
+            </ul>
+          </li>
+          <li><a href="Comparison.html">Comparisons</a></li>
+          <li><a href="data.html">Data</a></li>
         </ul>
-      </li>
-      <li><a href="Comparison.html">Comparisons</a></li>
-      <li><a href="Data.html">Data</a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container">
-  <h3>Cloudiness</h3>
-  <p>This page is about the cloudiness visualization. Wee-haa.</p>
-</div>
+      </div>
+    </nav>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3 class="header">Humidity</h3>
+              <hr>
+              <div class="media">
+                <div class="media-left">
+                  <a href="Comparison.html">
+                    <img class="media-object main" src="Resources\assets\images\Fig2.png" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                    There are more records of 100% humidity around the equator than other records, but we can’t say we have a significant relationship between Latitude and Humidity. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h4 class="header">Visualizations</h4>
+              <hr>
+              <div>
+                <a href="Max_Temperature.html">
+                  <img class="small" src="Resources\assets\images\Fig1.png" alt="...">
+                </a>
+                <a href="Comparison.html">
+                  <img class="small" src="Resources\assets\images\Fig2.png" alt="...">
+                </a>
+              </div>
+              <div>
+                <a href="Cloudiness.html">
+                  <img class="small" src="Resources\assets\images\Fig3.png" alt="...">
+                </a>
+                <a href="Wind_Speed.html">
+                  <img class="small" src="Resources\assets\images\Fig4.png" alt="...">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
